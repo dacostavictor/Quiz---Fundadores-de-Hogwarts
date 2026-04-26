@@ -15,9 +15,22 @@ a {
   color: white;
 }
 
+hr {
+  border-color: gray;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
 #nomes {
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  display: block;
+  margin-top: 30px;
 }
 
 .gryffindor {
@@ -40,7 +53,7 @@ a {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 50px;
+  margin-top: 30px;
   background-color: rgb(230, 57, 57);
   text-align: center;
   border-radius: 35px;
