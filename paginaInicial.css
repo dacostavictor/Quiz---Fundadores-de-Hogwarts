@@ -27,6 +27,7 @@ img {
   margin-top: 40px;
   margin-bottom: 40px;
   border-radius: 10px;
+  box-shadow: black 2px 3px 2px;
 }
 
 #nomes {
@@ -78,7 +79,7 @@ img {
 
 #descricao {
   display: block;
-  font-size: 16px;
+  font-size: 20px;
   text-shadow: black 1px 2px 1px;
   margin-left: auto;
   margin-right: auto;
