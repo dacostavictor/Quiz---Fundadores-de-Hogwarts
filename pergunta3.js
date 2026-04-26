@@ -1,5 +1,3 @@
-localStorage.clear();
-
 class Personagem {
   #nome;
   #pontos;
@@ -19,16 +17,31 @@ class Personagem {
   }
 }
 
-const sonserina = new Personagem("Sonserina", 0);
-const gryffindor = new Personagem("Gryffindor", 0);
-const lufaLufa = new Personagem("Lufa Lufa", 0);
-const corvinal = new Personagem("Corvinal", 0);
+const sonserina = new Personagem(
+  "Sonserina",
+  Number(localStorage.getItem("sonserina")) || 0,
+);
+
+const gryffindor = new Personagem(
+  "Gryffindor",
+  Number(localStorage.getItem("gryffindor")) || 0,
+);
+
+const lufaLufa = new Personagem(
+  "Lufa Lufa",
+  Number(localStorage.getItem("lufaLufa")) || 0,
+);
+
+const corvinal = new Personagem(
+  "Corvinal",
+  Number(localStorage.getItem("corvinal")) || 0,
+);
 
 let qtd;
 
-const questao1 = document.getElementById("questao1");
+const questao3 = document.getElementById("questao3");
 
-questao1.addEventListener("submit", (event) => {
+questao3.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const respostaSelecionada = document.querySelector(
@@ -42,34 +55,34 @@ questao1.addEventListener("submit", (event) => {
   switch (resposta) {
     case "a":
       qtd = 4;
-      lufaLufa.ganharPontos(qtd);
-      gryffindor.ganharPontos(--qtd);
+      gryffindor.ganharPontos(qtd);
+      lufaLufa.ganharPontos(--qtd);
       corvinal.ganharPontos(--qtd);
       sonserina.ganharPontos(--qtd);
       break;
 
     case "b":
       qtd = 4;
-      gryffindor.ganharPontos(qtd);
-      lufaLufa.ganharPontos(--qtd);
-      sonserina.ganharPontos(--qtd);
+      lufaLufa.ganharPontos(qtd);
       corvinal.ganharPontos(--qtd);
+      gryffindor.ganharPontos(--qtd);
+      sonserina.ganharPontos(--qtd);
       break;
 
     case "c":
       qtd = 4;
       corvinal.ganharPontos(qtd);
       sonserina.ganharPontos(--qtd);
-      gryffindor.ganharPontos(--qtd);
       lufaLufa.ganharPontos(--qtd);
+      gryffindor.ganharPontos(--qtd);
       break;
 
     case "d":
       qtd = 4;
       sonserina.ganharPontos(qtd);
       corvinal.ganharPontos(--qtd);
-      lufaLufa.ganharPontos(--qtd);
       gryffindor.ganharPontos(--qtd);
+      lufaLufa.ganharPontos(--qtd);
       break;
   }
 
@@ -78,5 +91,5 @@ questao1.addEventListener("submit", (event) => {
   localStorage.setItem("lufaLufa", lufaLufa.getPontos());
   localStorage.setItem("corvinal", corvinal.getPontos());
 
-  window.location.href = "pergunta2.html";
+  window.location.href = "pergunta4.html";
 });
