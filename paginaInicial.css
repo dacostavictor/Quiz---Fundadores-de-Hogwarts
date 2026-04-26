@@ -1,0 +1,61 @@
+body {
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+  background-color: rgb(29, 29, 29);
+  color: white;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#nomes {
+  text-align: center;
+  font-size: 30px;
+}
+
+.gryffindor {
+  color: rgb(194, 1, 1);
+}
+
+.sonserina {
+  color: rgb(1, 139, 1);
+}
+
+.lufa-lufa {
+  color: rgb(207, 207, 0);
+}
+
+.corvinal {
+  color: rgb(52, 52, 241);
+}
+
+#comecar {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  background-color: rgb(230, 57, 57);
+  text-align: center;
+  border-radius: 35px;
+  width: 200px;
+  height: 60px;
+  font-size: 35px;
+  border: none;
+  transition: transform 0.3s ease-out;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+#comecar:hover {
+  cursor: pointer;
+  background-color: rgb(230, 98, 98);
+  transform: scale(1.1);
+}
