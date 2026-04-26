@@ -8,6 +8,7 @@ body {
 
 h1 {
   text-align: center;
+  font-size: 40px;
 }
 
 a {
@@ -16,13 +17,15 @@ a {
 }
 
 hr {
-  border-color: gray;
+  border-color: rgb(75, 75, 75);
 }
 
 img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
   border-radius: 10px;
 }
 
@@ -53,7 +56,7 @@ img {
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30px;
+  margin-top: 50px;
   background-color: rgb(230, 57, 57);
   text-align: center;
   border-radius: 35px;
@@ -71,4 +74,13 @@ img {
   cursor: pointer;
   background-color: rgb(230, 98, 98);
   transform: scale(1.1);
+}
+
+#descricao {
+  display: block;
+  font-size: 16px;
+  text-shadow: black 1px 2px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
