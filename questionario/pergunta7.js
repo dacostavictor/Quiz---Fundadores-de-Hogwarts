@@ -55,9 +55,9 @@ questao2.addEventListener("submit", (event) => {
   switch (resposta) {
     case "a":
       qtd = 4;
-      gryffindor.ganharPontos(qtd);
-      corvinal.ganharPontos(--qtd);
       lufaLufa.ganharPontos(qtd);
+      gryffindor.ganharPontos(--qtd);
+      corvinal.ganharPontos(--qtd);
       sonserina.ganharPontos(--qtd);
       break;
 
@@ -66,24 +66,23 @@ questao2.addEventListener("submit", (event) => {
       corvinal.ganharPontos(qtd);
       sonserina.ganharPontos(--qtd);
       gryffindor.ganharPontos(--qtd);
-      lufaLufa.ganharPontos(qtd);
+      lufaLufa.ganharPontos(--qtd);
       break;
 
     case "c":
       qtd = 4;
-      gryffindor.ganharPontos(qtd);
+      sonserina.ganharPontos(qtd);
+      corvinal.ganharPontos(--qtd);
+      gryffindor.ganharPontos(--qtd);
       lufaLufa.ganharPontos(--qtd);
-      corvinal.ganharPontos(qtd);
-      sonserina.ganharPontos(--qtd);
       break;
 
     case "d":
       qtd = 4;
-      sonserina.ganharPontos(qtd);
-      lufaLufa.ganharPontos(--qtd);
-      qtd--;
-      corvinal.ganharPontos(--qtd);
       gryffindor.ganharPontos(qtd);
+      lufaLufa.ganharPontos(--qtd);
+      sonserina.ganharPontos(--qtd);
+      corvinal.ganharPontos(--qtd);
       break;
   }
 
