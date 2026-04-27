@@ -39,9 +39,9 @@ const corvinal = new Personagem(
 
 let qtd;
 
-const questao2 = document.getElementById("questao2");
+const questao7 = document.getElementById("questao7");
 
-questao2.addEventListener("submit", (event) => {
+questao7.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const respostaSelecionada = document.querySelector(
@@ -91,5 +91,5 @@ questao2.addEventListener("submit", (event) => {
   localStorage.setItem("lufaLufa", lufaLufa.getPontos());
   localStorage.setItem("corvinal", corvinal.getPontos());
 
-  window.location.href = "pergunta3.html";
+  window.location.href = "pergunta8.html";
 });
