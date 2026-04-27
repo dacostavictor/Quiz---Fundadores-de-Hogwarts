@@ -41,7 +41,7 @@ let qtd;
 
 const questao10 = document.getElementById("questao10");
 
-questao7.addEventListener("submit", (event) => {
+questao10.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const respostaSelecionada = document.querySelector(
@@ -91,5 +91,5 @@ questao7.addEventListener("submit", (event) => {
   localStorage.setItem("lufaLufa", lufaLufa.getPontos());
   localStorage.setItem("corvinal", corvinal.getPontos());
 
-  window.location.href = "pergunta10.html";
+  window.location.href = "../resultado.html";
 });

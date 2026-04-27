@@ -41,7 +41,7 @@ let qtd;
 
 const questao9 = document.getElementById("questao9");
 
-questao7.addEventListener("submit", (event) => {
+questao9.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const respostaSelecionada = document.querySelector(
