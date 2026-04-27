@@ -39,9 +39,9 @@ const corvinal = new Personagem(
 
 let qtd;
 
-const questao5 = document.getElementById("questao5");
+const questao6 = document.getElementById("questao6");
 
-questao5.addEventListener("submit", (event) => {
+questao6.addEventListener("submit", (event) => {
   event.preventDefault();
 
   const respostaSelecionada = document.querySelector(
@@ -63,18 +63,18 @@ questao5.addEventListener("submit", (event) => {
 
     case "b":
       qtd = 4;
-      corvinal.ganharPontos(qtd);
-      lufaLufa.ganharPontos(--qtd);
-      sonserina.ganharPontos(--qtd);
-      gryffindor.ganharPontos(--qtd);
-      break;
-
-    case "c":
-      qtd = 4;
       lufaLufa.ganharPontos(qtd);
       gryffindor.ganharPontos(--qtd);
       corvinal.ganharPontos(--qtd);
       sonserina.ganharPontos(--qtd);
+      break;
+
+    case "c":
+      qtd = 4;
+      corvinal.ganharPontos(qtd);
+      sonserina.ganharPontos(--qtd);
+      lufaLufa.ganharPontos(--qtd);
+      gryffindor.ganharPontos(--qtd);
       break;
 
     case "d":
@@ -91,5 +91,5 @@ questao5.addEventListener("submit", (event) => {
   localStorage.setItem("lufaLufa", lufaLufa.getPontos());
   localStorage.setItem("corvinal", corvinal.getPontos());
 
-  window.location.href = "pergunta6.html";
+  window.location.href = "pergunta7.html";
 });
