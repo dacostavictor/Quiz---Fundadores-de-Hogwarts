@@ -2,11 +2,27 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resultado</title>
+    <title>Resultado do Quiz</title>
     <link rel="stylesheet" href="resultado.css" />
   </head>
-  <body>
+  <body id="body">
+    <div class="container">
+      <h1>Seu resultado foi:</h1>
+      <h2 id="fundador"></h2>
+
+      <img
+        src=""
+        alt="imagem do fundador com mais pontos"
+        id="imagem"
+        width="200px"
+        height="350px"
+      />
+
+      <p id="pontuacao"></p>
+
+      <button onclick="refazerQuiz()">Refazer Quiz</button>
+    </div>
+
     <script src="resultado.js"></script>
   </body>
 </html>

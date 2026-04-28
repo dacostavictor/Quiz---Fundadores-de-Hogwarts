@@ -1,7 +1,107 @@
 body {
+  margin: 0;
   font-family:
     "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
     Arial, sans-serif;
-  background-color: rgb(29, 29, 29);
+  background: #0f1115;
+  color: #eaeaea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1a1d24;
+  padding: 40px;
+  border-radius: 16px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+
+h1 {
+  font-size: 20px;
+  color: #aaa;
+  margin-bottom: 10px;
+}
+
+#casa {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#pontuacao {
+  font-size: 14px;
+  color: #888;
+}
+
+button {
+  margin-top: 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
   color: white;
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.gryffindor .container {
+  border-color: #ff4d4d;
+}
+
+.gryffindor #fundador {
+  color: #ff4d4d;
+}
+
+.gryffindor button {
+  background: #ff4d4d;
+}
+
+.sonserina .container {
+  border-color: #3ddc97;
+}
+
+.sonserina #fundador {
+  color: #3ddc97;
+}
+
+.sonserina button {
+  background: #3ddc97;
+  color: black;
+}
+
+.lufaLufa .container {
+  border-color: #ffd93d;
+}
+
+.lufaLufa #fundador {
+  color: #ffd93d;
+}
+
+.lufaLufa button {
+  background: #ffd93d;
+  color: black;
+}
+
+.corvinal .container {
+  border-color: #4da6ff;
+}
+
+.corvinal #fundador {
+  color: #4da6ff;
+}
+
+.corvinal button {
+  background: #4da6ff;
 }
